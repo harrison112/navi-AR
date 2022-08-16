@@ -836,7 +836,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 0.03794874, b: 0, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.5254902, g: 1, b: 0.029061556, a: 1}
+    m_SelectedColor: {r: 1, g: 0.039215688, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -855,7 +855,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 678988483}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1214617305}
+        m_TargetAssemblyTypeName: changeSceneWithButton, Assembly-CSharp
+        m_MethodName: loadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: helpRequestedPageScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &678988483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,7 +1863,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1353820463}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1214617305}
+        m_TargetAssemblyTypeName: changeSceneWithButton, Assembly-CSharp
+        m_MethodName: loadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ARPageScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1353820463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1973,7 +1997,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1403196980}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1214617305}
+        m_TargetAssemblyTypeName: changeSceneWithButton, Assembly-CSharp
+        m_MethodName: loadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mapPageScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1403196980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2386,7 +2422,7 @@ GameObject:
   - component: {fileID: 2051366505}
   - component: {fileID: 2051366504}
   m_Layer: 5
-  m_Name: ARmapBackground
+  m_Name: ARMapBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
