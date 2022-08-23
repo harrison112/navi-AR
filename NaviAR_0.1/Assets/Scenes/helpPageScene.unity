@@ -633,7 +633,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "\nPlease click on the button \nif you would like to request\nfor additional
+  m_Text: "\nPlease click on the  \nif you would like to request\nfor additional
     assistance,\nand a nurse will arrive shortly\n"
 --- !u!222 &598747785
 CanvasRenderer:
@@ -1399,7 +1399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 164.9, y: 442}
+  m_AnchoredPosition: {x: 162.3, y: 442}
   m_SizeDelta: {x: 145.7812, y: 76.296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1103550161
