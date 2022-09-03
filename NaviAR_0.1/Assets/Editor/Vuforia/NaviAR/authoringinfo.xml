@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_info.xsd">
+    <TargetSet version="3.4">
+        <AreaTarget version="5.0" bbox="-3.4234 0.5603 -6.5284 9.1100 3.2846 10.6566" targetId="e8798e85e62d4f06b1d6e5d34b56f86b" name="NaviAR" pathAuthoring="e8798e85e62d4f06b1d6e5d34b56f86b_authoring.glb" pathOcclusion="e8798e85e62d4f06b1d6e5d34b56f86b_occlusion.3dt" pathNavMesh="e8798e85e62d4f06b1d6e5d34b56f86b_navmesh.glb" />
+    </TargetSet>
+</QCARInfo>

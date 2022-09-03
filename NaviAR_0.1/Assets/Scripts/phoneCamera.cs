@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class phoneCamera : MonoBehaviour
 {
 
-    private bool camAvailable;
-    private WebCamTexture backCam;
-    private Texture defaultBackground;
+    private bool camAvailable; 
+    private WebCamTexture backCam; 
+    private Texture defaultBackground; 
 
     public RawImage background;
     public AspectRatioFitter fit;
 
-    private void Start()
+    private void Start() 
     {
         defaultBackground = background.texture;
         WebCamDevice[] devices = WebCamTexture.devices;

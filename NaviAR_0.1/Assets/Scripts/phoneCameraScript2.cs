@@ -17,6 +17,7 @@ public class phoneCameraScript2 : MonoBehaviour
     {
         webCamTexture = new WebCamTexture();
         GetComponent<Renderer>().material.mainTexture = webCamTexture;
+        WebCamDevice[] devices = WebCamTexture.devices; //hoping this works
         webCamTexture.Play(); //Start Playing
     }
 
