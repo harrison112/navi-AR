@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ARPageScene.unity
     guid: 10641dd104fa6d44c91b0d0264af799a
   - enabled: 0
-    path: Assets/Scenes/not ARPageScene.unity
+    path: Assets/Scenes/old ARPageScene.unity
     guid: 5b727a0e2a8ab3142a4a4adb22a6ffa6
   - enabled: 1
     path: Assets/Scenes/helpPageScene.unity
