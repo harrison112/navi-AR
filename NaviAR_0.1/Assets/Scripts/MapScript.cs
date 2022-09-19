@@ -24,6 +24,9 @@ public class MapScript : MonoBehaviour
 
     IEnumerator GetGoogleMap(float lat, float lon)
     {
+        if (!Input.location.isEnabledByUser)
+            yield break;
+
         url = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + lon 
         + "&zoom=" + zoom + "&size=" + mapWidth + "x" + 
         mapHeight + "&scale=" + scale + "&maptype=" + mapSelected +
