@@ -61,10 +61,12 @@ public class MapScriptTest : MonoBehaviour
         Input.location.Start(10, 0.1f);
        // lat = Input.location.lastData.latitude;
        // lon = Input.location.lastData.longitude;
-        mapCoroutine = GetGoogleMap(lat, lon);
-        StartCoroutine(mapCoroutine);
+        //mapCoroutine = GetGoogleMap(lat, lon);
+        //StartCoroutine(mapCoroutine);
         lat = Input.location.lastData.latitude;
         lon = Input.location.lastData.longitude;
+        mapCoroutine = GetGoogleMap(lat, lon);
+        StartCoroutine(mapCoroutine);
     }
 
     // Update is called once per frame
