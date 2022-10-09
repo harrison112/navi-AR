@@ -114,13 +114,23 @@ extern void phoneCameraScript3__ctor_m92372BDC8ED93DF2939889F50BCB9A57CEA8A795 (
 extern void setNavigationTarget_Start_mC9C3879ECC50A3459EBAF8510366EF7AA36EBD13 (void);
 // 0x00000033 System.Void setNavigationTarget::Update()
 extern void setNavigationTarget_Update_m5431AD9523FCDAA8B01AB0CEC56E7FAAF9E61EAB (void);
-// 0x00000034 System.Void setNavigationTarget::.ctor()
+// 0x00000034 System.Void setNavigationTarget::SetCurrentNavigationTarget(System.Int32)
+extern void setNavigationTarget_SetCurrentNavigationTarget_mEAA80C9EA9064B791321F68BDB522C9D093EDAC0 (void);
+// 0x00000035 System.Void setNavigationTarget::ToggleVisibility()
+extern void setNavigationTarget_ToggleVisibility_mE217ADF23DDC7376A9F2948B85CC764E3276006A (void);
+// 0x00000036 System.Void setNavigationTarget::.ctor()
 extern void setNavigationTarget__ctor_m2BE8DECB903869F2B00C935BDAB4D8AB0F5A1795 (void);
-// 0x00000035 System.Void WebCam::StartStopCam_Clicked()
+// 0x00000037 System.Void setNavigationTarget/<>c__DisplayClass8_0::.ctor()
+extern void U3CU3Ec__DisplayClass8_0__ctor_mCE7B1FA60766AA654194A9302C81C0040B5148E8 (void);
+// 0x00000038 System.Boolean setNavigationTarget/<>c__DisplayClass8_0::<SetCurrentNavigationTarget>b__0(target)
+extern void U3CU3Ec__DisplayClass8_0_U3CSetCurrentNavigationTargetU3Eb__0_m8E31CB99EC97473C9263E2A1A93FB465076BA828 (void);
+// 0x00000039 System.Void target::.ctor()
+extern void target__ctor_mF38E36A642AF143098D4C4B305964D0EE3B2BAC3 (void);
+// 0x0000003A System.Void WebCam::StartStopCam_Clicked()
 extern void WebCam_StartStopCam_Clicked_m12B95AB0ED4BDA09A864F62FC75B5279D5F532D7 (void);
-// 0x00000036 System.Void WebCam::.ctor()
+// 0x0000003B System.Void WebCam::.ctor()
 extern void WebCam__ctor_m2F0308CDC8648F0CD1FCA8CF9339C63A15FFDD9E (void);
-static Il2CppMethodPointer s_methodPointers[54] = 
+static Il2CppMethodPointer s_methodPointers[59] = 
 {
 	cameraTest2_Start_m0EE4AED90E31E64957108DDE6C7632E822096BCC,
 	cameraTest2_Update_mC5391E660F29BB31642F0037400F5C2417FCA33F,
@@ -173,11 +183,16 @@ static Il2CppMethodPointer s_methodPointers[54] =
 	phoneCameraScript3__ctor_m92372BDC8ED93DF2939889F50BCB9A57CEA8A795,
 	setNavigationTarget_Start_mC9C3879ECC50A3459EBAF8510366EF7AA36EBD13,
 	setNavigationTarget_Update_m5431AD9523FCDAA8B01AB0CEC56E7FAAF9E61EAB,
+	setNavigationTarget_SetCurrentNavigationTarget_mEAA80C9EA9064B791321F68BDB522C9D093EDAC0,
+	setNavigationTarget_ToggleVisibility_mE217ADF23DDC7376A9F2948B85CC764E3276006A,
 	setNavigationTarget__ctor_m2BE8DECB903869F2B00C935BDAB4D8AB0F5A1795,
+	U3CU3Ec__DisplayClass8_0__ctor_mCE7B1FA60766AA654194A9302C81C0040B5148E8,
+	U3CU3Ec__DisplayClass8_0_U3CSetCurrentNavigationTargetU3Eb__0_m8E31CB99EC97473C9263E2A1A93FB465076BA828,
+	target__ctor_mF38E36A642AF143098D4C4B305964D0EE3B2BAC3,
 	WebCam_StartStopCam_Clicked_m12B95AB0ED4BDA09A864F62FC75B5279D5F532D7,
 	WebCam__ctor_m2F0308CDC8648F0CD1FCA8CF9339C63A15FFDD9E,
 };
-static const int32_t s_InvokerIndices[54] = 
+static const int32_t s_InvokerIndices[59] = 
 {
 	6022,
 	6022,
@@ -230,6 +245,11 @@ static const int32_t s_InvokerIndices[54] =
 	6022,
 	6022,
 	6022,
+	4736,
+	6022,
+	6022,
+	6022,
+	3391,
 	6022,
 	6022,
 	6022,
@@ -238,7 +258,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	54,
+	59,
 	s_methodPointers,
 	0,
 	NULL,

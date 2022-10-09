@@ -666,7 +666,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 75904135}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1581577388}
+        m_TargetAssemblyTypeName: setNavigationTarget, Assembly-CSharp
+        m_MethodName: ToggleVisibility
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &75904135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7116,7 +7128,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Laundry
       m_Image: {fileID: 0}
-    - m_Text: MusicRoom
+    - m_Text: Music Room
       m_Image: {fileID: 0}
     - m_Text: Leisure
       m_Image: {fileID: 0}
@@ -7124,7 +7136,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1581577388}
+        m_TargetAssemblyTypeName: setNavigationTarget, Assembly-CSharp
+        m_MethodName: SetCurrentNavigationTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1556160414
 MonoBehaviour:
@@ -7573,8 +7597,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f530f0662d5ceff459f9782b1afa2ba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topDownCamera: {fileID: 388422765}
-  navTargetObject: {fileID: 1204045126}
+  navigationTargetDropDown: {fileID: 1556160413}
+  navigationTargetObjects:
+  - Name: Music Room
+    PositionObject: {fileID: 1204045126}
+  - Name: Leisure
+    PositionObject: {fileID: 2106064528}
+  - Name: Dining
+    PositionObject: {fileID: 77922132}
+  - Name: Living Room
+    PositionObject: {fileID: 1381408106}
+  - Name: Kitchen
+    PositionObject: {fileID: 987165204}
+  - Name: Toilet
+    PositionObject: {fileID: 800610879}
+  - Name: Study
+    PositionObject: {fileID: 63492905}
+  - Name: Laundry
+    PositionObject: {fileID: 715826397}
 --- !u!1 &1608450111
 GameObject:
   m_ObjectHideFlags: 0
