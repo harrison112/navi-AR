@@ -1849,7 +1849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 300.00003}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1300428342
@@ -2165,7 +2165,8 @@ MonoBehaviour:
     reasonable expenses (including attorneys\u2019 fees) incurred by Google in collecting
     overdue payments except where such payments are due to Google\u2019s billing
     inaccuracies.\r\n\r\n2.6 No Purchase Order Number Required. Google is not required
-    to provide a purchase order number on Google\u2019s invoice (or otherwise).\n\nEnd"
+    to provide a purchase order number on Google\u2019s invoice (or otherwise).\n\nCongratulations!
+    You've made it to the cool zone :D\n\nEnd"
 --- !u!222 &1441408925
 CanvasRenderer:
   m_ObjectHideFlags: 0

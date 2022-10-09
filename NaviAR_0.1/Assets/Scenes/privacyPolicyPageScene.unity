@@ -1849,7 +1849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 300.00003}
+  m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1300428342
@@ -2043,7 +2043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -705}
+  m_AnchoredPosition: {x: 0, y: -403}
   m_SizeDelta: {x: 677.6802, y: 1078.5715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1441408924
@@ -2092,7 +2092,14 @@ MonoBehaviour:
     also turn on Location History if you want to create a private map of where you
     go with your signed-in devices. And if your Web & App Activity setting is enabled,
     your searches and other activity from Google services, which may also include
-    location information, is saved to your Google Account.\n\nEnd"
+    location information, is saved to your Google Account.\n\nWhen you use a location-enabled
+    Google service, we may collect and process information about your actual location,
+    like GPS signals sent by a mobile device. We may also use various technologies
+    to determine location, such as sensor data from your device that may, for example,
+    provide information on nearby Wi-Fi access points and cell towers.\n\nWe may
+    collect device-specific information (such as your hardware model, operating system
+    version, unique device identifiers, and mobile network information including
+    phone number).\n\nYour soul now belongs to us. \n\nEnd"
 --- !u!222 &1441408925
 CanvasRenderer:
   m_ObjectHideFlags: 0
