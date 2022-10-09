@@ -11,8 +11,9 @@ public class setNavigationTarget : MonoBehaviour
     [SerializeField]
     private GameObject navTargetObject;
 
-    private NavMeshPath path;
-    private LineRenderer line;
+    private NavMeshPath path; // current calculated path
+    private LineRenderer line; // linerenderer to display path
+    
 
     private bool lineToggle = false;
 
