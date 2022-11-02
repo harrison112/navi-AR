@@ -152,6 +152,17 @@ struct InterfaceFuncInvoker2
 		return ((Func)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
 	}
 };
+template <typename R, typename T1, typename T2, typename T3, typename T4>
+struct InterfaceFuncInvoker4
+{
+	typedef R (*Func)(void*, T1, T2, T3, T4, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2, T3 p3, T4 p4)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
+	}
+};
 
 // System.Action`1<UnityEngine.UIElements.BaseVisualElementPanel>
 struct Action_1_tF0C1AFCCE9CE63382F43540DC0DA04A8939A8A53;
@@ -167,6 +178,14 @@ struct Action_1_t996DFD52B4BDA6CBE8058C13167C4D2B8C612CAA;
 struct Action_1_t3DC3411926243F1DB9C330F8E105B904E38C1A0B;
 // System.Action`1<System.Object>
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
+// System.Action`1<ZXing.Result>
+struct Action_1_t9C15D36035E0EC25EC6E91220DFFEA5436DBBFC6;
+// System.Action`1<ZXing.ResultPoint>
+struct Action_1_t70238D061BFFA7D49D2FF0ED8B4054E39AAE50BF;
+// ZXing.BarcodeReader`1<System.Object>
+struct BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95;
+// ZXing.BarcodeWriter`1<System.Object>
+struct BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B;
 // UnityEngine.UIElements.BaseFieldTraits`2<System.Boolean,System.Object>
 struct BaseFieldTraits_2_t839F6C6377D9CD0188201F1AB7AF4EE79BD5B4B4;
 // UnityEngine.UIElements.BaseFieldTraits`2<System.Int32,System.Object>
@@ -243,6 +262,18 @@ struct EventCallback_1_tF213A6C7DEAE29A9970B73DB52E8778214E5CD9C;
 struct EventCallback_1_t15E400616AB56B841F72D09E503D6377E8366E07;
 // System.Func`1<System.Threading.Tasks.Task/ContingentProperties>
 struct Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1;
+// System.Func`2<ZXing.LuminanceSource,ZXing.Binarizer>
+struct Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1;
+// System.Func`2<System.Object,ZXing.LuminanceSource>
+struct Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E;
+// System.Func`5<System.Byte[],System.Int32,System.Int32,ZXing.RGBLuminanceSource/BitmapFormat,ZXing.LuminanceSource>
+struct Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364;
+// ZXing.Rendering.IBarcodeRenderer`1<System.Object>
+struct IBarcodeRenderer_1_t740792FA847A76585C524082103082C3FC5142D0;
+// System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>
+struct IDictionary_2_t8BD3FBFB61AB580CC7009E3B888C03B9F7BAB843;
+// System.Collections.Generic.IDictionary`2<ZXing.ResultMetadataType,System.Object>
+struct IDictionary_2_t3B68EF519427E7FE95A7242758F0B03628B9AA64;
 // UnityEngine.UIElements.INotifyValueChanged`1<System.Object>
 struct INotifyValueChanged_1_t5609D5E7F6B98CF0A5B5391C8ECA9B69C18C4F4D;
 // UnityEngine.UIElements.INotifyValueChanged`1<System.String>
@@ -353,10 +384,16 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct ComputedTransitionPropertyU5BU5D_t25B9E78F5276CDA297C8215C316452CAB8219E82;
 // System.Delegate[]
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// System.Int32[]
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 // System.IntPtr[]
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 // System.Object[]
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+// ZXing.Result[]
+struct ResultU5BU5D_t99723BB01916FCBAA83890E37F4CA930D7761513;
+// ZXing.ResultPoint[]
+struct ResultPointU5BU5D_t98ED51EB991985ED1768D88FD09F826256CB6CB0;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // System.String[]
@@ -369,12 +406,20 @@ struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
 // UnityEngine.UIElements.AttachToPanelEvent
 struct AttachToPanelEvent_t95C0BC3DD37F324A7816CB2574B56D976C932B28;
+// ZXing.BarcodeReaderGeneric
+struct BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254;
+// ZXing.BarcodeWriterGeneric
+struct BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250;
 // UnityEngine.UIElements.BaseVisualElementPanel
 struct BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303;
+// ZXing.Binarizer
+struct Binarizer_t572A39AE4ED8D092CB638D71DBD8809D683D62FF;
 // UnityEngine.UIElements.BindableElement
 struct BindableElement_t873EFF65032D21AB3B7BFBA21675D1693967435C;
 // System.Reflection.Binder
 struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
+// ZXing.Common.BitMatrix
+struct BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91;
 // System.Globalization.Calendar
 struct Calendar_t0A117CC7532A54C17188C2EFEA1F79DB20DF3A3B;
 // UnityEngine.UIElements.CallbackEventHandler
@@ -397,12 +442,16 @@ struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0;
 struct CustomStyleResolvedEvent_t54D095D62773F628A6A05A4531DEE990166062E6;
 // System.Globalization.DateTimeFormatInfo
 struct DateTimeFormatInfo_t0457520F9FA7B5C8EAAEB3AD50413B6AEEB7458A;
+// ZXing.Common.DecodingOptions
+struct DecodingOptions_t062639B46A59B4B5ABA29D42F15F248D1BC771DB;
 // System.Delegate
 struct Delegate_t;
 // System.DelegateData
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
 // UnityEngine.UIElements.ElementUnderPointer
 struct ElementUnderPointer_tB43AD64F79C6F06829D8B90318AF1A6BBE9C1904;
+// ZXing.Common.EncodingOptions
+struct EncodingOptions_t84F92A38829ABB6416A1FCE75DEB61FECF8AFA2D;
 // UnityEngine.Event
 struct Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB;
 // UnityEngine.UIElements.EventBase
@@ -465,6 +514,8 @@ struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB;
 struct KeyDownEvent_t1971978254C8EE65CDDD992AF86B44E442CDD18C;
 // UnityEngine.UIElements.Label
 struct Label_tC160668F9119CE0F5567021FB208E64A5B1C5B70;
+// ZXing.LuminanceSource
+struct LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE;
 // UnityEngine.Material
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 // System.Reflection.MemberFilter
@@ -481,12 +532,16 @@ struct NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472;
 struct OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662;
 // UnityEngine.UIElements.PropagationPaths
 struct PropagationPaths_tA17A0F2CAFF1A86B552ED6D984DAA2F14AB2B0E5;
+// ZXing.Reader
+struct Reader_t1A9C7CADF7A2C1EDCB670DAA63F259E7B798FE4C;
 // System.Text.RegularExpressions.Regex
 struct Regex_tE773142C2BE45C5D362B0F815AFF831707A51772;
 // UnityEngine.UIElements.UIR.RenderChainCommand
 struct RenderChainCommand_t4F70E36AF4BC3645C8F9C822B7A3ACE9CB815727;
 // UnityEngine.UIElements.RepaintData
 struct RepaintData_t90534752135661579EC254884F550545D001B5EA;
+// ZXing.Result
+struct Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF;
 // System.Runtime.Serialization.SafeSerializationManager
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 // System.Threading.Tasks.StackGuard
@@ -525,6 +580,8 @@ struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115;
 struct VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB;
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// ZXing.Writer
+struct Writer_tD7C011B509AF75FAE5FEC7F59F9A0B04C020992A;
 // UnityEngine.Yoga.YogaConfig
 struct YogaConfig_tE8B56F99460C291C1F7F46DBD8BAC9F0B653A345;
 // UnityEngine.Yoga.YogaNode
@@ -539,6 +596,7 @@ struct TypeData_t01D670B4E71B5571B38C7412B1E652A47D6AF66A;
 IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AsyncTaskCache_tFF531BF652DE2E2C46E1BBB33E595D2FC7EC8E09_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var;
@@ -590,6 +648,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2809BB36A5DD51DA0872E242E075887E5F2CE2EB
 IL2CPP_EXTERN_C String_t* _stringLiteral281E4838B647B106CEAA1223C7794A3F392336C8;
 IL2CPP_EXTERN_C String_t* _stringLiteral313DF12B986144753CF783AC9D1B9CA90E6321CC;
 IL2CPP_EXTERN_C String_t* _stringLiteral3CFBA36D3B441C5648A2965BB079FCEDCC23A5FA;
+IL2CPP_EXTERN_C String_t* _stringLiteral4536DDD0E2E17C3A94209BA694839B7125FCD3E3;
 IL2CPP_EXTERN_C String_t* _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8;
 IL2CPP_EXTERN_C String_t* _stringLiteral4DE568C91EA99022F140EDED215DEE02E9BA48AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral5B8421D27B8A50D030CE56C4FE80F325BF15B06A;
@@ -599,6 +658,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7F3AE879E2E7A8D115FD02ECC6AA71646A023F99
 IL2CPP_EXTERN_C String_t* _stringLiteral879112F1694F095E445C80699D013DAAA8FA726B;
 IL2CPP_EXTERN_C String_t* _stringLiteral9CDE2E829A73DDA747C6E2326BEEFF8377D96740;
 IL2CPP_EXTERN_C String_t* _stringLiteral9D0DFF194F98B55D55753ECEBC2376F98EEEC60C;
+IL2CPP_EXTERN_C String_t* _stringLiteral9D8B081E8C94429BEC1F7608DC33DC7A0E402BF7;
 IL2CPP_EXTERN_C String_t* _stringLiteralA1BC69C817E33F3D01CEE196C9A8F57C347559B6;
 IL2CPP_EXTERN_C String_t* _stringLiteralA4AB18AAC87BC239182FF1DD9BC48537940FDB7D;
 IL2CPP_EXTERN_C String_t* _stringLiteralA785866E4168D315158A2235C85CC15287EB9500;
@@ -608,6 +668,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB33F63A61DAA3D769F026D737C92DB30774A8A1B
 IL2CPP_EXTERN_C String_t* _stringLiteralB9B7051F7464C2105913AE35CDC053C4C6DE44C0;
 IL2CPP_EXTERN_C String_t* _stringLiteralCF6D423D6F6C1327D40E616C52007CE750F00A62;
 IL2CPP_EXTERN_C String_t* _stringLiteralD5EB1A5943E4DE4FCA5B2BE3256F27DFE3527FF1;
+IL2CPP_EXTERN_C String_t* _stringLiteralF20D71CE9028E9283E6D684C99128405C9C774B7;
 IL2CPP_EXTERN_C String_t* _stringLiteralF440B55C626342F03E6091DBABC34A57BF940545;
 IL2CPP_EXTERN_C String_t* _stringLiteralFA260FC853CB4AA8AF3AC7F64023DE48E0B01E64;
 IL2CPP_EXTERN_C String_t* _stringLiteralFA4739BB766285BE5D47A8E4313D4C3AE807EEE9;
@@ -625,6 +686,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_m847AA92
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_mC246A9CC141CAE572F2D156AF571D3CF5B7DA0C3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_mC4BAC830514CDB105730FF11F7744A4424A4009B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_mF21C48FC9CEC24F4E9C5975C54F87BE9CA179046_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BarcodeReader_1_DecodeMultiple_m065DDA5C1BDED5E87E8D17E25F47E77A673628A6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BarcodeReader_1_Decode_m8C2B085BFD0341860357F0570F65B13E9B26EDEC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BarcodeWriter_1_Write_mED805110745D5C1BD0B13AC7E04B5A44CD97E599_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BarcodeWriter_1_Write_mF1B74AAD43DDD33FCB89DCEC4223F50EE6BA2E06_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BaseField_1_UpdateMixedValueContent_m156108CC44C0842A01A050F0DBC4B29F1626848A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BaseField_1_UpdateMixedValueContent_m245F902C7B6F455CAC887EAC60102480725BB341_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BaseField_1_UpdateMixedValueContent_m55205252EF305EAFA1A9D5311D8AA1FC31C27318_RuntimeMethod_var;
@@ -670,6 +735,7 @@ struct Exception_t_marshaled_pinvoke;
 
 struct Task_1U5BU5D_t54E2C15C8F3B98F79512798949C26C8A752440F8;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct ResultU5BU5D_t99723BB01916FCBAA83890E37F4CA930D7761513;
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
@@ -749,6 +815,59 @@ struct AsyncTaskCache_tFF531BF652DE2E2C46E1BBB33E595D2FC7EC8E09_StaticFields
 	Task_1_t824317F4B958F7512E8F7300511752937A6C6043* ___FalseTask_1;
 	// System.Threading.Tasks.Task`1<System.Int32>[] System.Runtime.CompilerServices.AsyncTaskCache::Int32Tasks
 	Task_1U5BU5D_t54E2C15C8F3B98F79512798949C26C8A752440F8* ___Int32Tasks_2;
+};
+
+// ZXing.BarcodeReaderGeneric
+struct BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254  : public RuntimeObject
+{
+	// ZXing.Reader ZXing.BarcodeReaderGeneric::reader
+	RuntimeObject* ___reader_2;
+	// System.Func`5<System.Byte[],System.Int32,System.Int32,ZXing.RGBLuminanceSource/BitmapFormat,ZXing.LuminanceSource> ZXing.BarcodeReaderGeneric::createRGBLuminanceSource
+	Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364* ___createRGBLuminanceSource_3;
+	// System.Func`2<ZXing.LuminanceSource,ZXing.Binarizer> ZXing.BarcodeReaderGeneric::createBinarizer
+	Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1* ___createBinarizer_4;
+	// System.Boolean ZXing.BarcodeReaderGeneric::usePreviousState
+	bool ___usePreviousState_5;
+	// ZXing.Common.DecodingOptions ZXing.BarcodeReaderGeneric::options
+	DecodingOptions_t062639B46A59B4B5ABA29D42F15F248D1BC771DB* ___options_6;
+	// System.Action`1<ZXing.ResultPoint> ZXing.BarcodeReaderGeneric::explicitResultPointFound
+	Action_1_t70238D061BFFA7D49D2FF0ED8B4054E39AAE50BF* ___explicitResultPointFound_7;
+	// System.Action`1<ZXing.Result> ZXing.BarcodeReaderGeneric::ResultFound
+	Action_1_t9C15D36035E0EC25EC6E91220DFFEA5436DBBFC6* ___ResultFound_8;
+	// System.Boolean ZXing.BarcodeReaderGeneric::<AutoRotate>k__BackingField
+	bool ___U3CAutoRotateU3Ek__BackingField_9;
+};
+
+struct BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254_StaticFields
+{
+	// System.Func`2<ZXing.LuminanceSource,ZXing.Binarizer> ZXing.BarcodeReaderGeneric::defaultCreateBinarizer
+	Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1* ___defaultCreateBinarizer_0;
+	// System.Func`5<System.Byte[],System.Int32,System.Int32,ZXing.RGBLuminanceSource/BitmapFormat,ZXing.LuminanceSource> ZXing.BarcodeReaderGeneric::defaultCreateRGBLuminanceSource
+	Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364* ___defaultCreateRGBLuminanceSource_1;
+};
+
+// ZXing.BarcodeWriterGeneric
+struct BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250  : public RuntimeObject
+{
+	// ZXing.Common.EncodingOptions ZXing.BarcodeWriterGeneric::options
+	EncodingOptions_t84F92A38829ABB6416A1FCE75DEB61FECF8AFA2D* ___options_0;
+	// ZXing.BarcodeFormat ZXing.BarcodeWriterGeneric::<Format>k__BackingField
+	int32_t ___U3CFormatU3Ek__BackingField_1;
+	// ZXing.Writer ZXing.BarcodeWriterGeneric::<Encoder>k__BackingField
+	RuntimeObject* ___U3CEncoderU3Ek__BackingField_2;
+};
+
+// ZXing.Common.BitMatrix
+struct BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91  : public RuntimeObject
+{
+	// System.Int32 ZXing.Common.BitMatrix::width
+	int32_t ___width_0;
+	// System.Int32 ZXing.Common.BitMatrix::height
+	int32_t ___height_1;
+	// System.Int32 ZXing.Common.BitMatrix::rowSize
+	int32_t ___rowSize_2;
+	// System.Int32[] ZXing.Common.BitMatrix::bits
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___bits_3;
 };
 
 // UnityEngine.UIElements.CallbackEventHandler
@@ -901,6 +1020,22 @@ struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com
 	int32_t ___m_isInherited_29;
 };
 
+// ZXing.Common.EncodingOptions
+struct EncodingOptions_t84F92A38829ABB6416A1FCE75DEB61FECF8AFA2D  : public RuntimeObject
+{
+	// System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object> ZXing.Common.EncodingOptions::<Hints>k__BackingField
+	RuntimeObject* ___U3CHintsU3Ek__BackingField_0;
+};
+
+// ZXing.LuminanceSource
+struct LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE  : public RuntimeObject
+{
+	// System.Int32 ZXing.LuminanceSource::width
+	int32_t ___width_0;
+	// System.Int32 ZXing.LuminanceSource::height
+	int32_t ___height_1;
+};
+
 // UnityEngine.UIElements.Manipulator
 struct Manipulator_tD5727ABA1F5AD1A50927212FAEB090E6BBCB4EBE  : public RuntimeObject
 {
@@ -911,6 +1046,25 @@ struct Manipulator_tD5727ABA1F5AD1A50927212FAEB090E6BBCB4EBE  : public RuntimeOb
 // System.Reflection.MemberInfo
 struct MemberInfo_t  : public RuntimeObject
 {
+};
+
+// ZXing.Result
+struct Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF  : public RuntimeObject
+{
+	// System.String ZXing.Result::<Text>k__BackingField
+	String_t* ___U3CTextU3Ek__BackingField_0;
+	// System.Byte[] ZXing.Result::<RawBytes>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CRawBytesU3Ek__BackingField_1;
+	// ZXing.ResultPoint[] ZXing.Result::<ResultPoints>k__BackingField
+	ResultPointU5BU5D_t98ED51EB991985ED1768D88FD09F826256CB6CB0* ___U3CResultPointsU3Ek__BackingField_2;
+	// ZXing.BarcodeFormat ZXing.Result::<BarcodeFormat>k__BackingField
+	int32_t ___U3CBarcodeFormatU3Ek__BackingField_3;
+	// System.Collections.Generic.IDictionary`2<ZXing.ResultMetadataType,System.Object> ZXing.Result::<ResultMetadata>k__BackingField
+	RuntimeObject* ___U3CResultMetadataU3Ek__BackingField_4;
+	// System.Int64 ZXing.Result::<Timestamp>k__BackingField
+	int64_t ___U3CTimestampU3Ek__BackingField_5;
+	// System.Int32 ZXing.Result::<NumBits>k__BackingField
+	int32_t ___U3CNumBitsU3Ek__BackingField_6;
 };
 
 // System.String
@@ -1020,6 +1174,20 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 // Native definition for COM marshalling of System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
+};
+
+// ZXing.BarcodeReader`1<System.Object>
+struct BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95  : public BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254
+{
+	// System.Func`2<T,ZXing.LuminanceSource> ZXing.BarcodeReader`1::createLuminanceSource
+	Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* ___createLuminanceSource_10;
+};
+
+// ZXing.BarcodeWriter`1<System.Object>
+struct BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B  : public BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250
+{
+	// ZXing.Rendering.IBarcodeRenderer`1<TOutput> ZXing.BarcodeWriter`1::<Renderer>k__BackingField
+	RuntimeObject* ___U3CRendererU3Ek__BackingField_3;
 };
 
 // UnityEngine.UIElements.CustomStyleProperty`1<UnityEngine.Color>
@@ -3114,6 +3282,21 @@ struct FocusEventBase_1_t31D2BDBFCEFBA91BDD440E4380A0D10EFAA665C2  : public Even
 	bool ___U3CIsFocusDelegatedU3Ek__BackingField_21;
 };
 
+// System.Func`2<ZXing.LuminanceSource,ZXing.Binarizer>
+struct Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1  : public MulticastDelegate_t
+{
+};
+
+// System.Func`2<System.Object,ZXing.LuminanceSource>
+struct Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E  : public MulticastDelegate_t
+{
+};
+
+// System.Func`5<System.Byte[],System.Int32,System.Int32,ZXing.RGBLuminanceSource/BitmapFormat,ZXing.LuminanceSource>
+struct Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364  : public MulticastDelegate_t
+{
+};
+
 // UnityEngine.UIElements.KeyboardEventBase`1<UnityEngine.UIElements.KeyDownEvent>
 struct KeyboardEventBase_1_t8A33E6EBB804F18BFE49BE0C38C5D0B8E233B6FA  : public EventBase_1_t730BB171C1C7F183359949BD5F4BA81AFE9A35CE
 {
@@ -3914,6 +4097,41 @@ struct Task_1U5BU5D_t54E2C15C8F3B98F79512798949C26C8A752440F8  : public RuntimeA
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
+// ZXing.Result[]
+struct ResultU5BU5D_t99723BB01916FCBAA83890E37F4CA930D7761513  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF* m_Items[1];
+
+	inline Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 // System.Object[]
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
 {
@@ -4333,6 +4551,16 @@ inline ValueTask_1_t7C5C39AB5B4A0ABA07AC934800D43DED916F9215 AsyncValueTaskMetho
 {
 	return ((  ValueTask_1_t7C5C39AB5B4A0ABA07AC934800D43DED916F9215 (*) (AsyncValueTaskMethodBuilder_1_tC52370C9D79190662723A5015241A6CA0D150DC2*, const RuntimeMethod*))AsyncValueTaskMethodBuilder_1_get_Task_mF89040D00C7CABBD5A59B37B7C1FFE6B976D2A1F_gshared)(__this, method);
 }
+// System.Void ZXing.BarcodeReaderGeneric::.ctor(ZXing.Reader,System.Func`2<ZXing.LuminanceSource,ZXing.Binarizer>,System.Func`5<System.Byte[],System.Int32,System.Int32,ZXing.RGBLuminanceSource/BitmapFormat,ZXing.LuminanceSource>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarcodeReaderGeneric__ctor_m92435AD93E0D9F5F17AF94E64AD45373DB3DD723 (BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254* __this, RuntimeObject* ___reader0, Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1* ___createBinarizer1, Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364* ___createRGBLuminanceSource2, const RuntimeMethod* method) ;
+// ZXing.Common.BitMatrix ZXing.BarcodeWriterGeneric::Encode(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91* BarcodeWriterGeneric_Encode_mBE61ECF6F97C4823066627597FDCC59276F9EEAE (BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250* __this, String_t* ___contents0, const RuntimeMethod* method) ;
+// ZXing.BarcodeFormat ZXing.BarcodeWriterGeneric::get_Format()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BarcodeWriterGeneric_get_Format_mFDE2BA91369398F8B32D8761CE12C48AB1A15DE9_inline (BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250* __this, const RuntimeMethod* method) ;
+// ZXing.Common.EncodingOptions ZXing.BarcodeWriterGeneric::get_Options()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EncodingOptions_t84F92A38829ABB6416A1FCE75DEB61FECF8AFA2D* BarcodeWriterGeneric_get_Options_mB8088B5C85A15614A35FC14642B4F28BF411D8B4 (BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250* __this, const RuntimeMethod* method) ;
+// System.Void ZXing.BarcodeWriterGeneric::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarcodeWriterGeneric__ctor_m80A2B4A7CB30CE595196D63EE43D16D8D54EC52E (BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UIElements.UxmlAttributeDescription::set_name(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UxmlAttributeDescription_set_name_mCE9C58621BAD7AB4E59D83DD21224A8FA6517E3E_inline (UxmlAttributeDescription_t742D021489DB2B564142146CAAAC3F9191825EF2* __this, String_t* ___value0, const RuntimeMethod* method) ;
 // UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::get_parent()
@@ -10095,6 +10323,292 @@ IL2CPP_EXTERN_C  ValueTask_1_t7C5C39AB5B4A0ABA07AC934800D43DED916F9215 AsyncValu
 	ValueTask_1_t7C5C39AB5B4A0ABA07AC934800D43DED916F9215 _returnValue;
 	_returnValue = AsyncValueTaskMethodBuilder_1_get_Task_mF89040D00C7CABBD5A59B37B7C1FFE6B976D2A1F(_thisAdjusted, method);
 	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void ZXing.BarcodeReader`1<System.Object>::.ctor(System.Func`2<T,ZXing.LuminanceSource>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarcodeReader_1__ctor_m74FE60C227AE5B98D6265A5CEFCC41B326E6F293_gshared (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95* __this, Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* ___createLuminanceSource0, const RuntimeMethod* method) 
+{
+	{
+		Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* L_0 = ___createLuminanceSource0;
+		((  void (*) (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95*, RuntimeObject*, Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E*, Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(__this, (RuntimeObject*)NULL, L_0, (Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1*)NULL, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		return;
+	}
+}
+// System.Void ZXing.BarcodeReader`1<System.Object>::.ctor(ZXing.Reader,System.Func`2<T,ZXing.LuminanceSource>,System.Func`2<ZXing.LuminanceSource,ZXing.Binarizer>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarcodeReader_1__ctor_m1763D854880A8931AFE0628E2B3D006816DE7622_gshared (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95* __this, RuntimeObject* ___reader0, Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* ___createLuminanceSource1, Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1* ___createBinarizer2, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = ___reader0;
+		Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* L_1 = ___createLuminanceSource1;
+		Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1* L_2 = ___createBinarizer2;
+		((  void (*) (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95*, RuntimeObject*, Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E*, Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1*, Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(__this, L_0, L_1, L_2, (Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364*)NULL, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+// System.Void ZXing.BarcodeReader`1<System.Object>::.ctor(ZXing.Reader,System.Func`2<T,ZXing.LuminanceSource>,System.Func`2<ZXing.LuminanceSource,ZXing.Binarizer>,System.Func`5<System.Byte[],System.Int32,System.Int32,ZXing.RGBLuminanceSource/BitmapFormat,ZXing.LuminanceSource>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarcodeReader_1__ctor_mD63D7AED76185B9A651C129D5C67FBCC57A049AA_gshared (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95* __this, RuntimeObject* ___reader0, Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* ___createLuminanceSource1, Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1* ___createBinarizer2, Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364* ___createRGBLuminanceSource3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject* L_0 = ___reader0;
+		Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1* L_1 = ___createBinarizer2;
+		Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364* L_2 = ___createRGBLuminanceSource3;
+		il2cpp_codegen_runtime_class_init_inline(BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254_il2cpp_TypeInfo_var);
+		BarcodeReaderGeneric__ctor_m92435AD93E0D9F5F17AF94E64AD45373DB3DD723((BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254*)__this, L_0, L_1, L_2, NULL);
+		Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* L_3 = ___createLuminanceSource1;
+		__this->___createLuminanceSource_10 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___createLuminanceSource_10), (void*)L_3);
+		return;
+	}
+}
+// System.Void ZXing.BarcodeReader`1<System.Object>::.ctor(ZXing.Reader,System.Func`2<ZXing.LuminanceSource,ZXing.Binarizer>,System.Func`5<System.Byte[],System.Int32,System.Int32,ZXing.RGBLuminanceSource/BitmapFormat,ZXing.LuminanceSource>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarcodeReader_1__ctor_m5C1F6042569F5812302A37F88D0148D0A987FFF2_gshared (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95* __this, RuntimeObject* ___reader0, Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1* ___createBinarizer1, Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364* ___createRGBLuminanceSource2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject* L_0 = ___reader0;
+		Func_2_t614D64FDB2EE48EB260F302A6131FFD71CE502F1* L_1 = ___createBinarizer1;
+		Func_5_t805EE5CC6AD8843F029E475B624A67448B7A7364* L_2 = ___createRGBLuminanceSource2;
+		il2cpp_codegen_runtime_class_init_inline(BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254_il2cpp_TypeInfo_var);
+		BarcodeReaderGeneric__ctor_m92435AD93E0D9F5F17AF94E64AD45373DB3DD723((BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254*)__this, L_0, L_1, L_2, NULL);
+		return;
+	}
+}
+// System.Func`2<T,ZXing.LuminanceSource> ZXing.BarcodeReader`1<System.Object>::get_CreateLuminanceSource()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* BarcodeReader_1_get_CreateLuminanceSource_m2A0F48EF347B27C25EF38CFD0DF4BCC71870FB36_gshared (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95* __this, const RuntimeMethod* method) 
+{
+	{
+		Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* L_0 = (Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E*)__this->___createLuminanceSource_10;
+		return L_0;
+	}
+}
+// ZXing.Result ZXing.BarcodeReader`1<System.Object>::Decode(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF* BarcodeReader_1_Decode_m8C2B085BFD0341860357F0570F65B13E9B26EDEC_gshared (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95* __this, RuntimeObject* ___barcodeBitmap0, const RuntimeMethod* method) 
+{
+	LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* V_0 = NULL;
+	{
+		Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* L_0;
+		L_0 = ((  Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* (*) (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_1 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF20D71CE9028E9283E6D684C99128405C9C774B7)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BarcodeReader_1_Decode_m8C2B085BFD0341860357F0570F65B13E9B26EDEC_RuntimeMethod_var)));
+	}
+
+IL_0013:
+	{
+		RuntimeObject* L_2 = ___barcodeBitmap0;
+		if (L_2)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_3 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_3);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral4536DDD0E2E17C3A94209BA694839B7125FCD3E3)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BarcodeReader_1_Decode_m8C2B085BFD0341860357F0570F65B13E9B26EDEC_RuntimeMethod_var)));
+	}
+
+IL_0026:
+	{
+		Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* L_4;
+		L_4 = ((  Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* (*) (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
+		RuntimeObject* L_5 = ___barcodeBitmap0;
+		NullCheck(L_4);
+		LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* L_6;
+		L_6 = ((  LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* (*) (Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		V_0 = L_6;
+		LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* L_7 = V_0;
+		NullCheck((BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254*)__this);
+		Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF* L_8;
+		L_8 = VirtualFuncInvoker1< Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF*, LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* >::Invoke(14 /* ZXing.Result ZXing.BarcodeReaderGeneric::Decode(ZXing.LuminanceSource) */, (BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254*)__this, L_7);
+		return L_8;
+	}
+}
+// ZXing.Result[] ZXing.BarcodeReader`1<System.Object>::DecodeMultiple(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ResultU5BU5D_t99723BB01916FCBAA83890E37F4CA930D7761513* BarcodeReader_1_DecodeMultiple_m065DDA5C1BDED5E87E8D17E25F47E77A673628A6_gshared (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95* __this, RuntimeObject* ___barcodeBitmap0, const RuntimeMethod* method) 
+{
+	LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* V_0 = NULL;
+	{
+		Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* L_0;
+		L_0 = ((  Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* (*) (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_1 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF20D71CE9028E9283E6D684C99128405C9C774B7)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BarcodeReader_1_DecodeMultiple_m065DDA5C1BDED5E87E8D17E25F47E77A673628A6_RuntimeMethod_var)));
+	}
+
+IL_0013:
+	{
+		RuntimeObject* L_2 = ___barcodeBitmap0;
+		if (L_2)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_3 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_3);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral4536DDD0E2E17C3A94209BA694839B7125FCD3E3)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BarcodeReader_1_DecodeMultiple_m065DDA5C1BDED5E87E8D17E25F47E77A673628A6_RuntimeMethod_var)));
+	}
+
+IL_0026:
+	{
+		Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* L_4;
+		L_4 = ((  Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E* (*) (BarcodeReader_1_tDB303956EA344EBC0A0F84BA5276ED77E1A9FD95*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
+		RuntimeObject* L_5 = ___barcodeBitmap0;
+		NullCheck(L_4);
+		LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* L_6;
+		L_6 = ((  LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* (*) (Func_2_t3ECD12D1B09D64A32B0FF9B85564D6EEBB8D481E*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		V_0 = L_6;
+		LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* L_7 = V_0;
+		NullCheck((BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254*)__this);
+		ResultU5BU5D_t99723BB01916FCBAA83890E37F4CA930D7761513* L_8;
+		L_8 = VirtualFuncInvoker1< ResultU5BU5D_t99723BB01916FCBAA83890E37F4CA930D7761513*, LuminanceSource_t066B696774156C477D4C4425791D3A0425F1DBDE* >::Invoke(15 /* ZXing.Result[] ZXing.BarcodeReaderGeneric::DecodeMultiple(ZXing.LuminanceSource) */, (BarcodeReaderGeneric_t7B149EF324490F1EA50994B1002027E502D8C254*)__this, L_7);
+		return L_8;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// ZXing.Rendering.IBarcodeRenderer`1<TOutput> ZXing.BarcodeWriter`1<System.Object>::get_Renderer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BarcodeWriter_1_get_Renderer_m5F6AA20B37D39548CA150E5B6DAA56A2F5F6B84C_gshared (BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CRendererU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+// System.Void ZXing.BarcodeWriter`1<System.Object>::set_Renderer(ZXing.Rendering.IBarcodeRenderer`1<TOutput>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarcodeWriter_1_set_Renderer_m69B76B3056AD5528FD3B06DF41E2F372A7C3D505_gshared (BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B* __this, RuntimeObject* ___value0, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = ___value0;
+		__this->___U3CRendererU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CRendererU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+// TOutput ZXing.BarcodeWriter`1<System.Object>::Write(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BarcodeWriter_1_Write_mED805110745D5C1BD0B13AC7E04B5A44CD97E599_gshared (BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B* __this, String_t* ___contents0, const RuntimeMethod* method) 
+{
+	BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91* V_0 = NULL;
+	{
+		RuntimeObject* L_0;
+		L_0 = ((  RuntimeObject* (*) (BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_1 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral9D8B081E8C94429BEC1F7608DC33DC7A0E402BF7)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BarcodeWriter_1_Write_mED805110745D5C1BD0B13AC7E04B5A44CD97E599_RuntimeMethod_var)));
+	}
+
+IL_0013:
+	{
+		String_t* L_2 = ___contents0;
+		NullCheck((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this);
+		BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91* L_3;
+		L_3 = BarcodeWriterGeneric_Encode_mBE61ECF6F97C4823066627597FDCC59276F9EEAE((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this, L_2, NULL);
+		V_0 = L_3;
+		RuntimeObject* L_4;
+		L_4 = ((  RuntimeObject* (*) (BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91* L_5 = V_0;
+		NullCheck((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this);
+		int32_t L_6;
+		L_6 = BarcodeWriterGeneric_get_Format_mFDE2BA91369398F8B32D8761CE12C48AB1A15DE9_inline((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this, NULL);
+		String_t* L_7 = ___contents0;
+		NullCheck((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this);
+		EncodingOptions_t84F92A38829ABB6416A1FCE75DEB61FECF8AFA2D* L_8;
+		L_8 = BarcodeWriterGeneric_get_Options_mB8088B5C85A15614A35FC14642B4F28BF411D8B4((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this, NULL);
+		NullCheck(L_4);
+		RuntimeObject* L_9;
+		L_9 = InterfaceFuncInvoker4< RuntimeObject*, BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91*, int32_t, String_t*, EncodingOptions_t84F92A38829ABB6416A1FCE75DEB61FECF8AFA2D* >::Invoke(1 /* TOutput ZXing.Rendering.IBarcodeRenderer`1<System.Object>::Render(ZXing.Common.BitMatrix,ZXing.BarcodeFormat,System.String,ZXing.Common.EncodingOptions) */, il2cpp_rgctx_data(method->klass->rgctx_data, 1), L_4, L_5, L_6, L_7, L_8);
+		return L_9;
+	}
+}
+// TOutput ZXing.BarcodeWriter`1<System.Object>::Write(ZXing.Common.BitMatrix)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BarcodeWriter_1_Write_mF1B74AAD43DDD33FCB89DCEC4223F50EE6BA2E06_gshared (BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B* __this, BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91* ___matrix0, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0;
+		L_0 = ((  RuntimeObject* (*) (BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_1 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral9D8B081E8C94429BEC1F7608DC33DC7A0E402BF7)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BarcodeWriter_1_Write_mF1B74AAD43DDD33FCB89DCEC4223F50EE6BA2E06_RuntimeMethod_var)));
+	}
+
+IL_0013:
+	{
+		RuntimeObject* L_2;
+		L_2 = ((  RuntimeObject* (*) (BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91* L_3 = ___matrix0;
+		NullCheck((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this);
+		int32_t L_4;
+		L_4 = BarcodeWriterGeneric_get_Format_mFDE2BA91369398F8B32D8761CE12C48AB1A15DE9_inline((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this, NULL);
+		NullCheck((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this);
+		EncodingOptions_t84F92A38829ABB6416A1FCE75DEB61FECF8AFA2D* L_5;
+		L_5 = BarcodeWriterGeneric_get_Options_mB8088B5C85A15614A35FC14642B4F28BF411D8B4((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this, NULL);
+		NullCheck(L_2);
+		RuntimeObject* L_6;
+		L_6 = InterfaceFuncInvoker4< RuntimeObject*, BitMatrix_t778C9E1BB9EA507245662AD1079B552BC23BCB91*, int32_t, String_t*, EncodingOptions_t84F92A38829ABB6416A1FCE75DEB61FECF8AFA2D* >::Invoke(1 /* TOutput ZXing.Rendering.IBarcodeRenderer`1<System.Object>::Render(ZXing.Common.BitMatrix,ZXing.BarcodeFormat,System.String,ZXing.Common.EncodingOptions) */, il2cpp_rgctx_data(method->klass->rgctx_data, 1), L_2, L_3, L_4, (String_t*)NULL, L_5);
+		return L_6;
+	}
+}
+// System.Void ZXing.BarcodeWriter`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarcodeWriter_1__ctor_m501EE8DA2D18F0BEC8B121DB74F8C1EB013E1C96_gshared (BarcodeWriter_1_t6CDF6659FE46E23A883C35664F3327A01C91537B* __this, const RuntimeMethod* method) 
+{
+	{
+		BarcodeWriterGeneric__ctor_m80A2B4A7CB30CE595196D63EE43D16D8D54EC52E((BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250*)__this, NULL);
+		return;
+	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -26781,6 +27295,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CancellationToken_t51142D9C6D7C02
 {
 	{
 		CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED L_0 = __this->____cancellationToken_18;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BarcodeWriterGeneric_get_Format_mFDE2BA91369398F8B32D8761CE12C48AB1A15DE9_inline (BarcodeWriterGeneric_tD73A8DDA72D2F12EA4C1218BA82F885C64E09250* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___U3CFormatU3Ek__BackingField_1;
 		return L_0;
 	}
 }

@@ -8730,7 +8730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		L_4 = CADSerializer_SerializeObject_mF2306E064D24B1D1A70655E530CA41C42607664A(L_3, NULL);
 		NullCheck(L_4);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5;
-		L_5 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(36 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_4);
+		L_5 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(37 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_4);
 		return L_5;
 	}
 }
@@ -8801,7 +8801,7 @@ IL_0019:
 		L_15 = CADSerializer_SerializeMessage_mCC9918DB222F35EF193D3ED7C5C3A3D4094A5D0D(L_14, NULL);
 		NullCheck(L_15);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_16;
-		L_16 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(36 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_15);
+		L_16 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(37 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_15);
 		*((RuntimeObject**)L_13) = (RuntimeObject*)L_16;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_13, (void*)(RuntimeObject*)L_16);
 		return;
@@ -29033,7 +29033,7 @@ IL_0028_1:
 				NullCheck(L_12);
 				NullCheck(L_10);
 				int32_t L_13;
-				L_13 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_10, L_11, 0, ((int32_t)(((RuntimeArray*)L_12)->max_length)));
+				L_13 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(31 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_10, L_11, 0, ((int32_t)(((RuntimeArray*)L_12)->max_length)));
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = __this->___buffer_3;
 				NullCheck(L_14);
 				if ((((int32_t)L_13) == ((int32_t)((int32_t)(((RuntimeArray*)L_14)->max_length)))))
@@ -29549,7 +29549,7 @@ IL_000a:
 		int32_t L_10 = V_0;
 		NullCheck(L_7);
 		String_t* L_11;
-		L_11 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(35 /* System.String System.Text.Encoding::GetString(System.Byte[],System.Int32,System.Int32) */, L_7, L_8, L_9, L_10);
+		L_11 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(37 /* System.String System.Text.Encoding::GetString(System.Byte[],System.Int32,System.Int32) */, L_7, L_8, L_9, L_10);
 		return L_11;
 	}
 }
