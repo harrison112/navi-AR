@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/helpPageScene.unity
     guid: 94724424846b4f2479658446f66ade2b
   - enabled: 1
-    path: Assets/Scenes/locationspageScene.unity
+    path: Assets/Scenes/locationsPageScene.unity
     guid: 1415a7ae4f355294bb2d9e46c3734d29
   - enabled: 1
     path: Assets/Scenes/accountPageScene.unity
@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/privacyPolicyPageScene.unity
     guid: 4a99a57a6402bb347b92d74995500a3d
+  - enabled: 1
+    path: Assets/Scenes/aboutUsScene.unity
+    guid: 9320cfa64485c3b4ba64fa752806d81e
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: c9147cdbdd1117a469ba01afb2c0c101, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d1115b7b379726e4195414bd1a1da91f, type: 2}
